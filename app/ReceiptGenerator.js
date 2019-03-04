@@ -9,11 +9,12 @@ module.exports = class ReceiptGenerator {
     this.entity = entity;
     this.data = {
       items: [],
-      totalTax: null
+      totalTax: null,
+      companyName: this.entity.companyName
     };
   }
 
-  generate() {
+  generateData() {
     let totalAmount = 0;
     this.entity.lines.forEach(line => {
       let thisAmount = 0;
@@ -31,7 +32,6 @@ module.exports = class ReceiptGenerator {
       }
       totalAmount += thisAmount;
       let res = {
-        companyName: this.entity.companyName,
         quantity: line.quantity,
         price: line.product.price,
         type: line.product.productType,
