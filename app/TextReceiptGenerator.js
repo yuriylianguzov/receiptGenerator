@@ -13,7 +13,7 @@ module.exports = class TextReceiptGenerator extends ReceiptGenerator {
         } \nTotal: ${item.subtotal + data.totalTax}`
       );
     });
-    console.log("\nTEXT RECEIPT", "\n" + result);
+    // console.log("\nTEXT RECEIPT", "\n" + result);
     return result;
   }
 };

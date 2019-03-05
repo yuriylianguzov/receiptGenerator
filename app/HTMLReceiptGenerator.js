@@ -11,13 +11,13 @@ module.exports = class HTMLReceiptGenerator extends ReceiptGenerator {
         "",
         `\n<li>${item.quantity} x ${item.type} ${item.name} = ${
           item.amount
-        }</li>\n</ul> \n<h3>Subtotal: ${item.subtotal}</h3> \n<h3>MVA: ${
+        }</li>\n</ul>\n<h3>Subtotal: ${item.subtotal}</h3>\n<h3>MVA: ${
           data.totalTax
-        }</h3> \n<h2>Total: ${item.subtotal +
+        }</h3>\n<h2>Total: ${item.subtotal +
           data.totalTax}</h2>\n</body>\n</html>`
       );
     });
-    console.log("\nHTML RECEIPT", "\n" + result);
+    // console.log("\nHTML RECEIPT", "\n" + result);
     return result;
   }
 };

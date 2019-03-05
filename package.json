@@ -1,0 +1,14 @@
+{
+  "name": "receipt-generator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/yuriylianguzov/receiptGenerator.git",
+  "author": "<yuriylianguzov@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^24.1.0"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}
